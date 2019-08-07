@@ -8,12 +8,13 @@ export default class Component1 extends Component {
       name: 'Will',
       showName: true,
       message: this.props.message
-    }
+    };
   }
 
   static defaultProps = {
     message: 'Hi There'
-  }
+  };
+
   render() {
     let name = this.state.showName ? this.state.name : 'No name';
     return (
